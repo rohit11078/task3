@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9ff;
+    color: #202443;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+}
+
+nav h2 span, .hero span {
+    color: #7058ff;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 12px;
+}
+
+button, .btn {
+    background: #7058ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #eef0ff, #e5e9ff);
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin: 20px 0;
+}
+
+.hero p {
+    line-height: 1.8;
+}
+
+.tag {
+    color: #7058ff;
+    font-weight: bold;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#services, #contact {
+    text-align: center;
+    padding: 65px 8%;
+}
+
+.subtitle {
+    margin: 15px 0 30px;
+    color: #777;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 14px;
+    flex: 1;
+    box-shadow: 0 5px 20px #20244310;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+input {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+#result {
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #202443;
+    color: white;
+}
+
+.menu-btn {
+    display: none;
+}
+
+body.dark {
+    background: #17182a;
+    color: white;
+}
+
+body.dark nav,
+body.dark .card {
+    background: #252740;
+}
+
+body.dark .hero {
+    background: linear-gradient(135deg, #252740, #343052);
+}
+
+@media (max-width: 650px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    #navLinks {
+        display: none;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    #navLinks.show {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
+
